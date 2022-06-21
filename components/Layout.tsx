@@ -37,13 +37,27 @@ export default function Layout(props: Props) {
         className={styles.header}
         style={{ backgroundColor: navBackground }}
       >
-        <h1 className={styles.name}>Couple of <span className={styles.name_blue}>Cards</span></h1>
-        <nav className={styles.nav}>
-          <Link href=""><p className={styles.link}>About</p></Link>
-          <Link href=""><p className={styles.link}>Our Team</p></Link>
-          <Link href=""><p className={styles.link}>Portfolio</p></Link>
-          <Link href=""><p className={styles.link_button}>Contact</p></Link>
-        </nav>
+        <div className={styles.header_container}>
+          <Link href="/#intro">
+            <h1 className={styles.name}>
+              Couple of <span className={styles.name_blue}>Cards</span>
+            </h1>
+          </Link>
+          <nav className={styles.nav}>
+            <Link href="/#about">
+              <p className={styles.link}>About</p>
+            </Link>
+            <Link href="/#our_team">
+              <p className={styles.link}>Our Team</p>
+            </Link>
+            <Link href="/#portfolio">
+              <p className={styles.link}>Portfolio</p>
+            </Link>
+            <Link href="/#contact">
+              <p className={styles.link_button}>Contact</p>
+            </Link>
+          </nav>
+        </div>
       </header>
       <main className={styles.content}>{props.children}</main>
     </div>
