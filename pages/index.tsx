@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 import intro from "../public/intro.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faGaugeHigh, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
@@ -51,7 +51,7 @@ export default function Home() {
             <div className={styles.icon_container}>
             <FontAwesomeIcon icon={faCalendarCheck} className={styles.icon}/>
               <h5 className={styles.small_header}>24/7 Support</h5>
-              <p className={styles.secondary_text}>Issues on the fly are a pain. That's why we're always available and happy to help!</p>
+              <p className={styles.secondary_text}>Issues on the fly are a pain. That&apos;s why we&apos;re always available and happy to help!</p>
             </div>
           </div>
         </section>
