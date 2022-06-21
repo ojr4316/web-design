@@ -1,0 +1,55 @@
+.main_container {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-background);
+}
+
+.header {
+    height: 75px;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    padding: 16px 64px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: -10;
+}
+
+.link {
+    margin-right: 32px;
+    color: var(--color-text);
+}
+
+.link_button {
+    color: white;
+    background-color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 24px;
+    color: var(--color-text);
+    font-family: 'Aldrich', sans-serif;
+}
+
+.name_blue {
+    color: var(--color-primary);
+    font-family: 'Aldrich', sans-serif;
+}
