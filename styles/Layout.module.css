@@ -11,6 +11,7 @@
     top: 0;
     width: 100%;
     transition: background-color 0.5s ease-out;
+    z-index: 999;
 }
 
 .header_container {
@@ -40,6 +41,7 @@
 
 .link {
     margin-right: 32px;
+    font-weight: 600;
     color: var(--color-text);
 }
 
@@ -49,6 +51,8 @@
 
 .link_button {
     color: white;
+    font-weight: 600;
+
     background-color: var(--color-primary);
     padding: 12px 24px;
     border-radius: 10px;
@@ -68,3 +72,37 @@
     color: var(--color-primary);
     font-family: 'Aldrich', sans-serif;
 }
+
+/*START FOOTER CSS*/
+.footer {
+    width: 100%;
+    background-color: var(--color-primary);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.footer_container {
+    max-width: 1280px;
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.footer_icon{
+    width: 35px;
+    margin: .5rem;
+}
+
+.footer_icon:hover{
+    cursor: pointer;
+}
+
+.footer_col_socials {
+    height: fit-content;
+    display: flex;
+}
+/*END FOOTER CSS*/

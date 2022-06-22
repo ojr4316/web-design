@@ -173,6 +173,25 @@ export default function Home() {
             </span>
             .
           </p>
+          <form className={styles.input_form} method="post">
+            <div className={styles.input_form}>
+              <input className={styles.contact_input_1} required id="first_name" type="text" placeholder="First Name*"/>
+              <input className={styles.contact_input_2} required id="last_name" type="text" placeholder="Last Name*"/>
+            </div>
+            
+            <div className={styles.input_form}>
+              <input className={styles.contact_input_1} id="phone" type="text" placeholder="Phone Number"/>
+              <input className={styles.contact_input_2} required id="email" type="text" placeholder="Email*"/>
+            </div>
+
+            <div className={styles.input_form}>
+              <textarea required className={styles.contact_textarea} id="comments" placeholder="Tell us how we can help!"/>
+            </div>
+
+            <button type="submit" className={styles.submit_button}>
+              Submit
+            </button>
+          </form>
         </section>
       </div>
     </Layout>
