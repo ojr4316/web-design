@@ -115,71 +115,51 @@
 }
 
 .card_main {
-  border: 5px inset var(--color-primary);
+  border: 2px inset var(--color-primary);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
-  transform: translate(-600px);
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
   background-color: white;
-}
-
-.card_main_f {
-  border: 5px inset var(--color-primary);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
-  background-color: white;
-  transition-duration: 1.5s;
-  opacity: 100%;
-}
-
-.card_main2_f {
-  border: 5px inset var(--color-primary);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
-  background-color: white;
-  transition-duration: 1.5s;
-  transition-delay: 0.5s;
-  opacity: 100%;
+  transform: rotate(25deg) scale(.8) translate(-200px, 150px);
+  display: flex;
+  flex-direction: column;
+  opacity: 50%;
 }
 
 .card_main2 {
-  border: 5px inset var(--color-primary);
+  border: 2px inset var(--color-primary);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
-  opacity: 75%;
-  transform: translate(-300px);
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
   background-color: white;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_main3 {
-  border: 5px inset var(--color-primary);
+  border: 2px inset var(--color-primary);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  transform: rotate(-25deg) scale(.8) translate(200px, 150px);
+  display: flex;
+  flex-direction: column;
   opacity: 50%;
-  background-color: white;
-}
-
-.card_main3_f {
-  border: 5px inset var(--color-primary);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 20px;
-  width: 300px;
-  opacity: 100%;
-  background-color: white;
-  transition-duration: 1.5s;
-  transition-delay: 1s;
 }
 
 .card_image{
-  width: 100%;
-  height: 300px;
-  border-radius: 15px 15px 0 0;
+  width: 65%;
+  height: 50%;
+  border-radius: 50%;
   object-fit: cover;
   object-position: top;
+  align-self: center;
+  margin-top: 16px;
 }
 
 .card_info {

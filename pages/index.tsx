@@ -107,7 +107,7 @@ export default function Home() {
           </p>
           <div className={styles.card_container}>
             <div
-              className={cardPos == 0 ? styles.card_main3 : styles.card_main3_f}
+              className={styles.card_main3}
             >
               <img
                 src={john.src}
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={cardPos == 0 ? styles.card_main2 : styles.card_main2_f}
+              className={styles.card_main2}
             >
               <img
                 src={john.src}
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={cardPos == 0 ? styles.card_main : styles.card_main_f}
+              className={styles.card_main}
             >
               <img
                 src={john.src}
