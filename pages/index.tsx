@@ -11,6 +11,7 @@ import {
   faLaptop,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [cardPos, setCardPos] = useState(0);
@@ -42,7 +43,7 @@ export default function Home() {
               The fastest delivery of modern websites that suit your businesses
               need in the Tri-State Area.
             </p>
-            <button className={styles.primary_button}>Get In Contact</button>
+            <Link href="/#contact"><button className={styles.primary_button}>Get In Contact</button></Link>
           </div>
           <img
             src={intro.src}
