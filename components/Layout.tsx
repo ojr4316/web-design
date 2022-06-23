@@ -20,7 +20,7 @@ export default function Layout(props: Props) {
   const [navBackground, setNavBackground] = useState("transparent");
   const handleScroll = () => {
     if (window.scrollY > 200) {
-      setNavBackground("#0071F2");
+      setNavBackground("#3988FF");
     } else {
       setNavBackground("transparent");
     }
@@ -48,22 +48,22 @@ export default function Layout(props: Props) {
       >
         <div className={styles.header_container}>
           <Link href="/#intro">
-            <h1 className={styles.name} style={navBackground == "#0071F2" ? {color: 'white', transitionDuration: '.3s'} : {}}>
-              Couple of <span className={styles.name_blue}>Cards</span>
+            <h1 className={styles.name} style={navBackground != "transparent" ? {color: 'white', transitionDuration: '.3s'} : {}}>
+              Couple of <span style={navBackground != "transparent" ? {} : {color: "#3988FF"}}>Cards</span>
             </h1>
           </Link>
           <nav className={styles.nav}>
             <Link href="/#about">
-              <p className={styles.link} style={navBackground == "#0071F2" ? {color: 'white', transitionDuration: '.3s'} : {}}>About</p>
+              <p className={styles.link} style={navBackground != "transparent" ? {color: 'white', transitionDuration: '.3s'} : {}}>About</p>
             </Link>
             <Link href="/#our_team">
-              <p className={styles.link} style={navBackground == "#0071F2" ? {color: 'white', transitionDuration: '.3s'} : {}}>Our Team</p>
+              <p className={styles.link} style={navBackground != "transparent" ? {color: 'white', transitionDuration: '.3s'} : {}}>Our Team</p>
             </Link>
             <Link href="/#portfolio">
-              <p className={styles.link} style={navBackground == "#0071F2" ? {color: 'white', transitionDuration: '.3s'} : {}}>Portfolio</p>
+              <p className={styles.link} style={navBackground != "transparent" ? {color: 'white', transitionDuration: '.3s'} : {}}>Portfolio</p>
             </Link>
             <Link href="/#contact">
-              <p className={styles.link_button}>Contact</p>
+              <p className={styles.link_button} style={navBackground != "transparent" ? {backgroundColor: 'white', color: "#3988FF", transitionDuration: ".3s"} : {}}>Contact</p>
             </Link>
           </nav>
         </div>
@@ -97,7 +97,7 @@ export default function Layout(props: Props) {
               <FontAwesomeIcon icon={faYoutube} className={styles.footer_icon}/>
             </Link>
           </div>
-          <div className={styles.footer_col}>
+          <div className={styles.footer_col} style={{textAlign: "right"}}>
             <h1 className={styles.name} style={{color: 'white'}}>Terms of Use</h1>
             <p>Cookie Policy</p>
             <p>Terms of Service</p>
